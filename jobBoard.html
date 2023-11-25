@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Matching Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+  <div class="container" >
+    <h1>Find right job with your matching job skills....</h1>
+    <p class="mainHeading" style="font-size: 40px; color:black;">Success in your next job hunt begins with a diligent checklist: evaluate your skills, understand your strengths, and curate your experiences. Each skill checked off is a step closer to your dream job.....</p>
+    <div class="input-section">
+      <label for="skillsInput" style="font-size: 30px;">Enter Your Skills (comma-separated):</label>
+      <div stylle="height:80px">
+        <input type="text"  id="skillsInput" style="width:50%; height:50px; padding: 10px;" placeholder="e.g., JavaScript, HTML, CSS">
+      </div>
+      <button style="margin-top: 10px; height: 40px; cursor: pointer;" onclick="calculateJobMatches()">Find Matching Jobs</button>
+    </div>
+    <div class="job-list" style="padding: 20px;">
+      <h2>Matching Jobs</h2>
+      <ul  style="font-size: 30px;" id="matchingJobs"></ul>
+    </div>
+
+  <script src="/jobRanking.js"></script>
+</body>
+</html>
